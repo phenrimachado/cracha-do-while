@@ -132,3 +132,23 @@ ul {
     height: 12px;
   }
 }
+
+@media (min-height: 990px) {
+  .rope {
+    height: 27vh;
+  }
+
+  .clasp {
+    top: 26.5vh;
+  }
+}
+
+@media (min-height: 1720px) {
+  .rope {
+    height: 37.5vh;
+  }
+
+  .clasp {
+    top: 37.2vh;
+  }
+}
