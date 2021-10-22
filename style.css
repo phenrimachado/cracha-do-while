@@ -114,41 +114,21 @@ ul {
   .rope {
     position: absolute;
     z-index: 1;
-    top: 0;
     left: 50vw;
     margin-left: -40px;
     width: 80px;
-    height: 24vh;
+    height: 1500px;
+    margin-top: -92rem;
     background: linear-gradient(161.24deg, #FF008E -15.25%, #FFCD1E 111.89%);
   }
 
   .clasp {
     background: #121214;
     position: absolute;
-    top: 23.5vh;
     left: 50vw;
+    margin-top: 20px;
     margin-left: -50px;
     width: 100px;
-    height: 12px;
-  }
-}
-
-@media (min-height: 990px) {
-  .rope {
-    height: 27vh;
-  }
-
-  .clasp {
-    top: 26.5vh;
-  }
-}
-
-@media (min-height: 1720px) {
-  .rope {
-    height: 37.5vh;
-  }
-
-  .clasp {
-    top: 37.2vh;
+    height: 15px;
   }
 }
