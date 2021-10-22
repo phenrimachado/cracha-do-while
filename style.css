@@ -93,6 +93,18 @@ ul {
   list-style: none;
 }
 
+.social-btn {
+  position: relative;
+  border-radius: 0.25rem;
+  width: 50px;
+  top: 0;
+  transition: all ease 0.3s;
+}
+.social-btn:hover {
+  border-radius: 50%;
+  top: -8px;
+}
+
 /* Media queries */
 
 @media (min-width: 800px) {
