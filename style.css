@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  --grey-white: hsl(240, 9%, 89%);
+  --grey: hsl(240, 7%, 78%);
+
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: #121214;
+  background-image: url(./images/background-desktop.png);
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  background: url(images/background.png);
+  width: 375px;
+  height: 812px;
+
+  color: var(--grey-white);
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.avatar {
+  max-width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+  font-weight: 400;
+  font-size: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+p {
+  margin-top: 2rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+ul {
+  margin: 4rem auto 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+
+  list-style: none;
+}
+
+/* Media queries */
+
+@media (min-width: 800px) {
+  main {
+    width: 358px;
+    height: 540px;
+    background: url(./images/background-card-desktop.png);
+    background-color: #202024;
+    background-size: 358px 540px;
+  }
+
+  .avatar {
+    margin: 4.7rem auto 0;
+  }
+
+  ul {
+    margin: 1.5rem auto 0;
+  }
+
+  .rope {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50vw;
+    margin-left: -40px;
+    width: 80px;
+    height: 24vh;
+    background: linear-gradient(161.24deg, #FF008E -15.25%, #FFCD1E 111.89%);
+  }
+
+  .clasp {
+    background: #121214;
+    position: absolute;
+    top: 23.5vh;
+    left: 50vw;
+    margin-left: -50px;
+    width: 100px;
+    height: 12px;
+  }
+}
