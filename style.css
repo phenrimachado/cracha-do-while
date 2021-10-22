@@ -28,6 +28,7 @@ main {
   height: 812px;
 
   color: var(--grey-white);
+  border-radius: 5px;
 }
 
 .container {
@@ -110,25 +111,29 @@ ul {
   ul {
     margin: 1.5rem auto 0;
   }
-
+  
   .rope {
     position: absolute;
-    z-index: 1;
-    left: 50vw;
-    margin-left: -40px;
+    z-index: 2;
     width: 80px;
-    height: 1500px;
-    margin-top: -92rem;
+    height: 750px;
     background: linear-gradient(161.24deg, #FF008E -15.25%, #FFCD1E 111.89%);
+    border-radius: 0 0 3px 3px;
+    /* right: vw; */
+    top: 0;
+    margin-top: -45rem;
+    margin-left: 8.9rem;
+    /* margin-left: -40px; */
   }
 
   .clasp {
-    background: #121214;
     position: absolute;
-    left: 50vw;
-    margin-top: 20px;
-    margin-left: -50px;
+    background: #121214;
+    z-index: 1;
     width: 100px;
-    height: 15px;
+    height: 12px;
+    margin-left: 8.3rem;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
   }
 }
