@@ -9,8 +9,9 @@ const usersSocial = {
 function changeSocialUsernames() {
   for (const li of socialUsernames.children) {
     const socialLink = li.getAttribute("class");
-    const changedSocialLink = `https://www.${socialLink}.com/${usersSocial[socialLink]}`;
-    li.children[0].href = changedSocialLink;
+    // const changedSocialLink = `https://www.${socialLink}.com/${usersSocial[socialLink]}`;
+    // li.children[0].href = changedSocialLink;
+    li.children[0].href = `https://www.${socialLink}.com/${usersSocial[socialLink]}`;
   }
 }
 

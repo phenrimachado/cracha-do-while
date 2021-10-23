@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -20,6 +21,7 @@ body {
   background-image: url(./images/background-desktop.png);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 main {
@@ -39,7 +41,7 @@ main {
 }
 
 .avatar {
-  max-width: 10rem;
+  /* max-width: 10rem; */
   margin: 11.5rem auto 0;
   position: relative;
 }
@@ -93,16 +95,15 @@ ul {
   list-style: none;
 }
 
-.social-btn {
-  position: relative;
-  border-radius: 0.25rem;
-  width: 50px;
+.do-while-logo {
+  position: absolute;
   top: 0;
-  transition: all ease 0.3s;
-}
-.social-btn:hover {
-  border-radius: 50%;
-  top: -8px;
+  margin: 10vw auto 0;
+  left: 50vw;
+  margin-left: -155px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 /* Media queries */
@@ -148,4 +149,48 @@ ul {
     margin-top: 1.5rem;
     border-radius: 1.5rem;
   }
+
+  .do-while-logo {
+    position: static;
+    margin: 0 auto;
+    /* margin-left: -155px; */
+    background: none;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+}
+/* Animations */
+
+@keyframes loading {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.spinning {
+	animation: loading 10s linear infinite;
+}
+
+#avatarImage {
+  transition: all ease 1s;
+}
+
+#avatarImage:hover {
+  width: 11.5rem;
+  height: 13rem;
+}
+
+.social-btn {
+  position: relative;
+  border-radius: 0.25rem;
+  width: 50px;
+  top: 0;
+  transition: all ease 0.3s;
+}
+.social-btn:hover {
+  border-radius: 50%;
+  top: -8px;
 }
