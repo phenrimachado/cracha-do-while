@@ -20,17 +20,19 @@
 <p align="center">
   <img 
     src="./public/desktop-badge.gif"
-    width="720px"
+    width="700px"
     style="display: inline; border-radius: 15px; border: "
   />
 </p>
+
 <p align="center">
   <img 
     src="./public/mobile-badge.gif"
-    width="240px"
+    width="200px"
     style="display: inline; border-radius: 15px; border: "
   />
 </p>
+
 <br />
 
 <h2 id="why">😊 Why?</h2>
