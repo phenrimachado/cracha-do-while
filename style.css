@@ -27,10 +27,18 @@ body {
 main {
   background: url(images/background.png);
   width: 375px;
-  height: 812px;
+  height: 780px;
 
   color: var(--grey-white);
   border-radius: 5px;
+
+  background-color: rgba(126, 126, 126, 0.2);
+  box-shadow: 5px 15px 30px 5px rgba(0, 0, 0, 0.7); 
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform-style: preserve-3d;
+  transform: translateZ(0);
 }
 
 .container {
@@ -97,11 +105,12 @@ ul {
 
 .do-while-logo {
   position: absolute;
-  top: 0;
-  margin: 10vw auto 0;
-  left: 50vw;
-  margin-left: -155px;
-  background: rgba(0, 0, 0, 0.3);
+  top: 2.5rem;
+
+  left: 30px;
+  /* margin-left: -155px; */
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.5);
   padding: 1rem;
   border-radius: 1rem;
 }
@@ -111,11 +120,9 @@ ul {
 @media (min-width: 800px) {
   main {
     width: 358px;
-    height: 540px;
+    height: 560px;
     background: url(./images/background-card-desktop.png);
-    background-size: 358px 540px;
-    background-color: rgba(126, 126, 126, 0.1);
-    box-shadow: 5px 15px 30px 5px rgba(0, 0, 0, 0.7);
+    background-size: 358px 560px;
   }
 
   .avatar {
@@ -153,11 +160,13 @@ ul {
 
   .do-while-logo {
     position: static;
-    margin: 0 auto;
-    /* margin-left: -155px; */
+    margin: 5rem auto 0;
+    margin-left: 15px;
     background: none;
+    box-shadow: none;
     padding: 1rem;
     border-radius: 1rem;
+    width: 320px;
   }
 }
 /* Animations */
