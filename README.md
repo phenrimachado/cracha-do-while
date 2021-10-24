@@ -19,12 +19,18 @@
 
 <p align="center">
   <img 
-    src="./public/card-dowhile-gif.gif"
+    src="./public/desktop-badge.gif"
     width="720px"
-    style=" border-radius: 15px; border: "
+    style="display: inline; border-radius: 15px; border: "
   />
 </p>
-
+<p align="center">
+  <img 
+    src="./public/mobile-badge.gif"
+    width="240px"
+    style="display: inline; border-radius: 15px; border: "
+  />
+</p>
 <br />
 
 <h2 id="why">😊 Why?</h2>
